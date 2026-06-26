@@ -62,7 +62,7 @@ export default function App() {
               {li.show.image ? <img src={li.show.image.medium} width="80px" className="image" /> : <h1>No image</h1>}
               <div className="half">
                 <p className="moviename">{li.show.name}</p>
-                {li.show.rating && <p className="rating">{li.show.rating.average}</p>}``
+                {li.show.rating && <p className="rating">{li.show.rating.average}</p>}
                 {/* <div dangerouslySetInnerHTML={{ __html: li.show.summary }} /> */}
                 <button onClick={() => Toggle(li.show.id)} className={`savedbtn ${!li.saved ? "click" : "notclick"}`}>{li.saved ? "Remove" : "Add to Watchlist"}</button>
                 {li.saved && (
